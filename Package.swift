@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.4
 import PackageDescription
 
 let package = Package(
@@ -11,8 +11,7 @@ let package = Package(
         .target(name: "SQLite", dependencies: ["SQLiteObjc", "CSQLite"]),
         .target(name: "SQLiteObjc"),
         .testTarget(name: "SQLiteTests", dependencies: ["SQLite"], path: "Tests/SQLiteTests")
-    ],
-    swiftLanguageVersions: [4, 5]
+    ]
 )
 
 #if os(Linux)

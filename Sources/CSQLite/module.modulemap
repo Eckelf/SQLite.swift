@@ -1,0 +1,7 @@
+// https://github.com/groue/GRDB.swift/blob/master/Sources/CSQLite/module.modulemap
+
+module CSQLite [system] {
+    header "shim.h"
+    link "sqlite3"
+    export *
+}
